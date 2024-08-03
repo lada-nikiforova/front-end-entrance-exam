@@ -1,8 +1,10 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
 
-
 export default [
-  {languageOptions: { globals: globals.browser }},
+  {
+    base: "/front-end-entrance-exam ",
+    languageOptions: { globals: globals.browser },
+  },
   pluginJs.configs.recommended,
 ];

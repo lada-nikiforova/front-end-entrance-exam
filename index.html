@@ -1,13 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Resume Editor</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body> 
+    <div class="cover container">
+      <div  id="resumeDiv" class="resume">
+        <section class="header">
+          <img class="header__img box" src="img/user.png" alt="user photo" />
+          <div contenteditable="true" class="header__name box text ">
+            <p class="header_p">Hello I'm</p>
+            <h1>Karthik SR <br> <span class="header_h">UX/UI Designer</span> </h1>
+          </div>
+          <div class="header__lang box">
+            <h2>Languages</h2>
+            <div class="level-lang">  
+              <div contenteditable="true" class="range_box=">
+                <p >English</p>
+                <p >Malayalam</p>
+                <p >Hindi</p>
+                <!-- <input type="range" class="range" value="60" min="0" max="100">  -->
+              </div>  
+              <div class="range_box">
+                <div class="range"></div>
+                <div class="range"></div>
+                <div class="range_last"></div>
+                <!-- <input type="range" class="range" value="78" min="0" max="100"> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-section">
+          <div class="main-section__experience box">
+            <h2>Experience</h2>
+            <div contenteditable="true" class="one-experience text">
+              <p class="top-experience">Jun. 2023 - Present</p>
+              <div class="content">
+                <p class="content-text"><span class="role-name">Marketing Manager</span> <br />Pankayam | Full-time</p>
+                <ul type="disc">
+                  <li>
+                    Strategy development and planning of campaigns that promote
+                    the business and generate genuine traffic
+                  </li>
+                  <li>SEO Content Creation for Blogs, Website, Social media</li>
+                </ul>
+              </div>
+            </div>
+            <div contenteditable="true" class="two-experience experience text">
+              <p class="top-experience">2017 - Present</p>
+              <div class="content">
+                <p class="content-text"><span class="role-name">Graphic / Web designer</span> <br />Freelance</p>
+                <ul type="disc">
+                  <li>
+                    Development of internal projects from scratch, product design
+                    of brands
+                  </li>
+                  <li>Landing page, webapps and hybrid apps</li>
+                  <li>
+                    Coordinating with outside agencies, art services, web
+                    designer, marketing, printers, and colleagues as necessary.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div contenteditable="true" class="three-experience experience text">
+              <p class="top-experience">Sep. 2021 - Jun. 2023</p>
+              <div class="content">
+                <p class="content-text"><span class="role-name">Legal Assistant</span> <br />Law Firm | Intern</p>
+                <ul type="disc">
+                  <li>
+                    Provide administrative support to lawyer and enhance office
+                    effectiveness
+                  </li>
+                  <li>Handle communication with clients, witnesses etc.</li>
+                  <li>
+                    repare case briefs and summarize depositions, interrogatories
+                    and testimony
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="main-section__icon box">
+            <h2>Tools</h2>
+            <div class="content-icon">
+              <div class="tag"><p contenteditable="true" >design</p></div>
+              <img src="icons/content1.svg" alt="">
+            </div>
+            <div class="content-icon">
+              <div class="tag"><p contenteditable="true" >no-code</p></div>
+              <img src="icons/content2.svg" alt="">
+            </div>
+            <div class="content-icon">
+              <div class="tag"><p contenteditable="true" >artoficial intelligence</p></div>
+              <img src="icons/content3.svg" alt="">
+            </div>
+        
+          </div>
+        </section>
+        <section class="end-section">
+          <div class="education box">
+            <h2>Education</h2>
+            <div class="education-boxes">
+              <div contenteditable="true" class="education__content-last text">
+                <p class="role-name">2023</p>
+                <p> <span class="role-name">UX/UI</span><br>#UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux</p>
+                <p>Coursera</p>
+              </div>
+              <div contenteditable="true" class="education__content text">
+                <p class="role-name">2017-2022</p>
+                <p > <span class="role-name">Law </span><span class="hashtags"><br>#law #legalStudies #contracts #internationalLaws</span></p>
+                <p>Universitity of Kerala</p>
+              </div>
+              <div contenteditable="true" class="education__content text">
+                <p class="role-name">2017</p>
+                <p > <span class="role-name">Graphic design</span> <span class="hashtags"><br>#branding #web #illustration #adobe</span></p>
+                <p>Coursera</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="end-section__right">
+            <div class="interest box">
+              <h2>Interest</h2>
+              <div class="interest-box">
+                <div contenteditable="true" class="interest__tag text"><p>branding</p></div>
+                <div contenteditable="true" class="interest__tag text"><p>design</p></div>
+                <div contenteditable="true" class="interest__tag text"><p>photography</p></div>
+                <div contenteditable="true" class="interest__tag text"><p>artificial intelligence</p></div>
+                <div contenteditable="true" class="interest__tag text"><p>illustration</p></div>
+                <div contenteditable="true" class="interest__tag text"><p>typography</p></div>
+                <div contenteditable="true" class="interest__tag text"><p>social networks</p></div>
+                <div contenteditable="true" class="interest__tag text"><p>research</p></div>
+                <div contenteditable="true" class="interest__tag text"><p>dron pilot</p></div>
+                <div contenteditable="true" class="interest__tag text"><p>games</p></div>
+
+              </div>
+              
+            </div>
+            <div contenteditable="true" class="contact box">
+              <h2>Let's chat! I'm ready to work on excinting projects</h2>
+              <p class="email">srkarthik.designscape@gmail.com</p>
+            </div>
+
+          </div>
+          
+        </section>
+      </div>
+      <div class="button-box">
+        <button class="button-new" id="saveButton">Save changes</button>
+        <button class="button-new" id="resetButton">Reset changes</button>
+        <button class="button-new" id="downloadButton">Download pdf</button>
+      </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

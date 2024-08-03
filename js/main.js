@@ -1,24 +1,40 @@
-import '../css/style.css'
-import javascriptLogo from '../javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import "../css/normalize.css";
+import "../css/style.css";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+function loadData() {
+  const divContent = localStorage.getItem("resumeDiv");
+  if (divContent) {
+    document.getElementById("resumeDiv").innerHTML = divContent;
+  }
+}
 
-setupCounter(document.querySelector('#counter'))
+function saveData() {
+  const divContent = document.getElementById("resumeDiv").innerHTML;
+  localStorage.setItem("resumeDiv", divContent);
+  alert("Данные сохранены!");
+}
+
+document.getElementById("saveButton").addEventListener("click", saveData);
+
+document.getElementById("resetButton").addEventListener("click", function () {
+  localStorage.clear();
+  location.reload();
+});
+
+document
+  .getElementById("downloadButton")
+  .addEventListener("click", function () {
+    const content = document.getElementById("resumeDiv");
+
+    const opt = {
+      margin: 0.3,
+      filename: "resume.pdf",
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 4 },
+      jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+    };
+
+    html2pdf().from(content).set(opt).save();
+  });
+
+window.onload = loadData;

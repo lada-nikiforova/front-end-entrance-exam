@@ -173,6 +173,24 @@ ul {
   margin-bottom: 10px;
 }
 
+.tag-experience{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.text-tag{
+  display: flex;
+  align-items: center;
+  border-radius: 59px;
+  padding: 2px 6px;
+  height: 16px;
+  background: rgba(126, 115, 18, 0.4);
+  text-align: center;
+  color: #ddf163;
+
+}
+
 .content {
   display: flex;
 }
@@ -250,6 +268,14 @@ ul {
   padding: 8px;
   width: 110px;
   margin-bottom: 12px;
+}
+
+.tag-education{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
+  text-align: center;
 }
 
 .interest__tag {
@@ -396,6 +422,7 @@ ul {
   }
   .cover {
     flex-direction: column;
+    width: 500px;
   }
   .button-box {
     display: flex;
